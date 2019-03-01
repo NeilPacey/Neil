@@ -1,0 +1,10 @@
+---
+- name: My first Playbook
+  hosts: 192.168.122.11
+  gather_facts: false
+
+  tasks:
+  - name: simple example
+    raw: "show version"
+    register: cmd_output
+  - debug: var=cmd_output.stdout_lines

@@ -1,0 +1,16 @@
+---
+- name: configure the login banner
+  hosts: r1
+  gather_facts: no
+  connection: local
+  tasks:
+   - name: top level configuration change
+     ios_config:
+      lines: hostname "{{inventory_hostname}}"
+
+   - name: configure interface settings
+     ios_config: 
+      lines:
+       - description test interface
+       - ip address 172.31.1.1 255.255.255.0
+      parents: interface Loopback0

@@ -1,0 +1,44 @@
+root@NetworkAutomation-1:~# python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> hosts=["r1","r2","r3"]
+>>> hosts[0]
+'r1'
+>>> hosts[1]
+'r2'
+>>> hosts[-1]
+'r3'
+>>> hosts[:2]
+['r1', 'r2']
+>>> hosts[:3]
+['r1', 'r2', 'r3']
+>>> len(hosts)
+3
+>>> hosts[2:]
+['r3']
+>>> type (hosts)
+<type 'list'>
+>>> hosts.append("r4")
+>>> hosts[2:]
+['r3', 'r4']
+>>>
+KeyboardInterrupt
+>>> insert(2,"s1")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'insert' is not defined
+>>> hosts.insert(2,"s1")
+>>> hosts
+['r1', 'r2', 's1', 'r3', 'r4']
+>>>
+A
+A
+A
+A
+A
+A
+A
+A
+A
+

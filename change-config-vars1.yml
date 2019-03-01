@@ -1,0 +1,19 @@
+---
+- name: configure the login banner
+  hosts: ciscohosts
+  gather_facts: no
+  connection: local
+  vars:
+   ansible_user: cisco
+   ansible_ssh_pass: cisco
+  tasks:
+   - name: top level configuration change
+     ios_config:
+      lines: hostname "{{inventory_hostname}}"
+
+   - name: configure interface settings
+     ios_config: 
+      lines:
+       - description test interface
+       - ip address {{addr}} 255.255.255.0
+      parents: interface Loopback0

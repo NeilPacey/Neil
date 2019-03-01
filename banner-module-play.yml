@@ -1,0 +1,16 @@
+---
+- name: configure the login banner
+  hosts: 192.168.122.11
+  gather_facts: no 
+  connection: local
+  tasks: 
+   - name: ios banner
+     ios_banner:
+      banner: login
+      text: "
+        this is my login banner
+        that contains a multiline
+        string
+        "
+      state: present
+

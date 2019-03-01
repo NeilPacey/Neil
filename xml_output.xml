@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration><interfaces><interface><name>ge0/0/0</name><description>Wide Area Network</description><ipv4><address><ip>192.168.0.2</ip><netmask>255.255.255.0</netmask></address></ipv4></interface></interfaces></configuration>

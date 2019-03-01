@@ -1,0 +1,123 @@
+    1  ifconfig
+    2  vi /etc/network/interfaces
+    3  ping 8.8.8.8
+    4  ifconfig
+    5  ping 192.168.122.11
+    6  ssh -l cisco 192.168.122.11
+    7  ssh -l cisco 192.168.122.1
+    8  ansible --version
+    9  pwd
+   10  vi ansible.cfg
+   11  vi /root/hosts
+   12  ansible 192.168.122.11 -m raw -a "show version" -u c
+   13  ansible 192.168.122.11 -m raw -a "show version" -u cisco
+   14  ansible 192.168.122.11 -m raw -a "show version" -u cisco -k
+   15  ansible cisco -m raw -a "show version" -u cisco -k
+   16  show ?
+   17  ansible cisco -m raw -a "show hosts" -u cisco -k
+   18  ansible cisco -m raw -a "show ip interfaces brief" -u cisco -k
+   19  ansible cisco -m raw -a "show ip interfaces brief" -u cisco -k | grep 0/0
+   20  ansible cisco -m raw -a "show ip interface brief" -u cisco -k | grep 0/0
+   21  vi /root/hosts
+   22  ssh -l cisco 192.168.122.13
+   23  ping 192.168.122.12
+   24  ping 192.168.122.13
+   25  ansible cisco -m raw -a "show ip interface brief" -u cisco -k | grep 0/0
+   26  vi banner-play.yml
+   27  ls -l
+   28  ansible-playbook banner-play.yml
+   29  vi banner-play.yml
+   30  ansible-playbook banner-play.yml
+   31  vi banner-play.yml
+   32  ansible-playbook banner-play.yml
+   33  vi banner-play.yml
+   34  ansible-playbook banner-play.yml
+   35  ping 192.168.122.11
+   36  ansible-playbook banner-play.yml
+   37  vi banner-play.yml
+   38  ansible-playbook banner-play.yml
+   39  ssh 192.168.122.11
+   40  ansible-playbook banner-play.yml -u cisco
+   41  ansible-playbook banner-play.yml -u cisco -k
+   42  vi banner-module-play.yml
+   43  ansible-playbook banner-module-play -u cisco -k
+   44  ls -l
+   45  ansible-playbook banner-module-play.yml -u cisco -k
+   46  vi banner-module-play.yml
+   47  ansible-playbook banner-module-play.yml -u cisco -k
+   48  vi banner-module-play.yml
+   49  ls -l
+   50  cat  banner-play.yml
+   51  vi banner-module-play.yml
+   52  ls-l
+   53  ls
+   54  cat banner-play.yml
+   55  vi banner-module-play.yml
+   56  ansible-playbook IOS-banner.yml -u cisco -k
+   57  vi banner-module-play.yml
+   58  vi banner-play.yml
+   59  vi banner-module-play.yml
+   60* ansible-playbook IOS-banner.yml
+   61  ls -l
+   62  cat  IOS-banner.yml
+   63  cat  IOS-banner
+   64  ls -l
+   65  banner-module-play
+   66  banner-module-play.yml
+   67  ansible-playbook banner-module-play.yml
+   68  vi banner-module-play.yml
+   69  ansible-playbook banner-module-play.yml
+   70  ansible-playbook banner-module-play.yml -u cisco -k
+   71  vi banner-module-play.yml
+   72  ansible-playbook banner-module-play.yml -u cisco -k
+   73  vi banner-module-play.yml
+   74  ansible-playbook banner-module-play.yml -u cisco -k
+   75  vi banner-module-play.yml
+   76  ansible-playbook banner-module-play.yml -u cisco -k
+   77  vi banner-module-play.yml
+   78  ansible-playbook banner-module-play.yml -u cisco -k
+   79  vi banner-module-play.yml
+   80  ansible-playbook banner-module-play.yml -u cisco -k
+   81  vi banner-module-play.yml
+   82  ansible-playbook banner-module-play.yml -u cisco -k
+   83  vi banner-module-play.yml
+   84  ansible-playbook banner-module-play.yml -u cisco -k
+   85  vi change-config.yml
+   86  cat banner-module-play.yml
+   87  vi change-config.yml
+   88  cat banner-module-play.yml
+   89  vi change-config.yml
+   90  ansible-playbook change-config.yml -u cisco -k
+   91  vi change-config.yml
+   92  ansible-playbook change-config.yml -u cisco -k
+   93  vi change-config.yml
+   94  ansible-playbook change-config.yml -u cisco -k
+   95  vi change-config.yml
+   96  ansible-playbook change-config.yml -u cisco -k
+   97  vi change-config.yml
+   98  ansible-playbook change-config.yml -u cisco -k
+   99  vi change-config.yml
+  100  ansible-playbook change-config.yml -u cisco -k
+  101  ls -l
+  102  cat ansible.cfg
+  103  cat hosts
+  104  vi hosts
+  105  ansible-playbook change-config.yml -u cisco -k
+  106  cat /etc
+  107  vi /etc/hosts
+  108  ansible-playbook change-config.yml -u cisco -k
+  109  cp change-config.yml change-config-vars.yml
+  110  vi change-config-vars.yml
+  111  ansible-playbook change-config-vars.yml -u cisco -k
+  112  vi change-config-vars.yml
+  113  ansible-playbook change-config-vars.yml -u cisco -k
+  114  ansible-playbook change-config-vars.yml
+  115  vi change-config-vars.yml
+  116  vi /etc/hosts
+  117  vi hosts
+  118  vi change-config-vars.yml
+  119  ansible-playbook change-config-vars.yml
+  120  vi hosts
+  121  vi /etc/hosts
+  122  ansible-playbook change-config-vars.yml
+  123  history > command-line.txt
